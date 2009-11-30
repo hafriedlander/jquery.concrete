@@ -10,7 +10,7 @@ $(function(){
 		dataType: 'text',
 		success: function(text){
 			var src = text; var encoded = src.replace(/</g, '&lt;'); 
-			$('h1').after('<code>'+encoded+'</code>');
+			$('h1:last').after('<code>'+encoded+'</code>');
 			
 			var options = {
 				height: "300px",
